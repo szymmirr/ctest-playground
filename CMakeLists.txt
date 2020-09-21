@@ -1,8 +1,9 @@
-project(muster)
+project(project)
 cmake_minimum_required(VERSION 2.8)
 
 add_executable(test test.c)
 
+add_executable(hello hello.cpp)
 
 enable_testing()
 add_test(usage_test test)
@@ -16,3 +17,6 @@ set_tests_properties(fail_test PROPERTIES WILL_FAIL TRUE)
 
 add_test(fail_test_output test 1)
 set_tests_properties(fail_test_output PROPERTIES PASS_REGULAR_EXPRESSION "FAIL")
+
+add_test(hello_test test)
+set_tests_properties(hello_test PROPERTIES TRUE)
