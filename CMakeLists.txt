@@ -21,8 +21,8 @@ set_tests_properties(fail_test_output PROPERTIES PASS_REGULAR_EXPRESSION "FAIL")
 add_test(hello_test hello)
 set_tests_properties(hello_test PROPERTIES WILL_FAIL FALSE)
 
-add_test(hello_test_output hello)
+add_test(hello_test_output hello 5 3)
 set_tests_properties(hello_test_output PROPERTIES PASS_REGULAR_EXPRESSION 8)
 
-add_test(hello_test_output_fail hello)
+add_test(hello_test_output_fail hello 5 3)
 set_tests_properties(hello_test_output_fail PROPERTIES PASS_REGULAR_EXPRESSION 9 WILL_FAIL TRUE)
