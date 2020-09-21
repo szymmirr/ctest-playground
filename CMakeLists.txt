@@ -23,3 +23,6 @@ set_tests_properties(hello_test PROPERTIES WILL_FAIL FALSE)
 
 add_test(hello_test_output hello)
 set_tests_properties(hello_test PROPERTIES PASS_REGULAR_EXPRESSION 8)
+
+add_test(hello_test_output hello)
+set_tests_properties(hello_test PROPERTIES PASS_REGULAR_EXPRESSION 9 WILL_FAIL)
